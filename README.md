@@ -1,29 +1,49 @@
 # AutoMyx Tools
 
-Practical read-only troubleshooting and automation tools from AutoMyx for Linux, cloud, monitoring, root cause analysis, and production operations.
+Practical troubleshooting and automation tools from AutoMyx for Linux, cloud, monitoring, root cause analysis, and production operations.
 
-AutoMyx focuses on real IT problems, practical fixes, and clear evidence-based troubleshooting.
+AutoMyx focuses on real IT problems, practical fixes, and clear evidence-based troubleshooting. The goal is to help engineers collect useful evidence quickly, understand what the output means, and decide the next safe action.
 
 ## About
 
-This repository contains tools used in AutoMyx videos and runbooks. The goal is to help engineers collect evidence quickly during production-style issues without making risky changes by default.
+This repository contains tools used in AutoMyx videos and technical runbooks.
 
 Most tools here follow the same pattern:
 
 1. Collect read-only system evidence.
 2. Show the most likely investigation paths.
 3. Provide manual commands for users who want to verify each step.
-4. Avoid restarting services, killing processes, or changing configuration automatically.
+4. Avoid risky automatic changes unless clearly documented.
 
 ## Tools
 
 | Area | Tool | Status | Description |
 | --- | --- | --- | --- |
-| Linux Troubleshooting | `highcpu-triage.sh` | Available | First-pass Linux high CPU and high load triage |
+| Linux Troubleshooting | [Linux High CPU](linux/high-cpu/) | Available | First-pass Linux high CPU and high load triage |
 | Linux Troubleshooting | `disk-triage.sh` | Planned | Disk full, inode, large files, deleted open files, and log growth triage |
 | Linux Troubleshooting | `memory-triage.sh` | Planned | Memory pressure, swap, OOM, RSS, and cgroup memory triage |
 | Linux Troubleshooting | `service-triage.sh` | Planned | systemd service down, failed, or restarting triage |
 | Linux Troubleshooting | `ssh-triage.sh` | Planned | Slow SSH or server access issue triage |
+
+## Repository Structure
+
+```text
+automyx-tools/
+  README.md
+  LICENSE
+  linux/
+    high-cpu/
+      README.md
+      highcpu-triage.sh
+      OUTPUT-GUIDE.md
+      VIDEO-01-linux-high-cpu.md
+```
+
+Each real-time scenario has its own folder. For example, the first Linux troubleshooting scenario is:
+
+```text
+linux/high-cpu/
+```
 
 ## Quick Start
 
@@ -37,6 +57,7 @@ cd automyx-tools
 Run a tool:
 
 ```bash
+cd linux/high-cpu
 chmod +x highcpu-triage.sh
 sudo ./highcpu-triage.sh
 ```
@@ -49,9 +70,13 @@ sudo ./highcpu-triage.sh --output /tmp
 
 ## Documentation
 
-Current tool documentation:
+Tool-specific documentation is inside each scenario folder.
 
-- [Output Guide](OUTPUT-GUIDE.md)
+For the Linux High CPU tool:
+
+- [Linux High CPU Triage](linux/high-cpu/)
+- [Linux High CPU Output Guide](linux/high-cpu/OUTPUT-GUIDE.md)
+- [Linux High CPU Video Notes](linux/high-cpu/VIDEO-01-linux-high-cpu.md)
 
 ## Recommended Dependencies
 
