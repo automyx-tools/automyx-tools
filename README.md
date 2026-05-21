@@ -19,7 +19,7 @@ Most tools here follow the same pattern:
 
 | Area | Tool | Status | Description |
 | --- | --- | --- | --- |
-| Linux Troubleshooting | highcpu-triage.sh | Available | First-pass Linux high CPU and high load triage |
+| Linux Troubleshooting | `highcpu-triage.sh` | Available | First-pass Linux high CPU and high load triage |
 | Linux Troubleshooting | `disk-triage.sh` | Planned | Disk full, inode, large files, deleted open files, and log growth triage |
 | Linux Troubleshooting | `memory-triage.sh` | Planned | Memory pressure, swap, OOM, RSS, and cgroup memory triage |
 | Linux Troubleshooting | `service-triage.sh` | Planned | systemd service down, failed, or restarting triage |
