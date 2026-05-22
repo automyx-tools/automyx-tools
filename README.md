@@ -20,10 +20,10 @@ Most tools here follow the same pattern:
 | Area | Tool | Status | Description |
 | --- | --- | --- | --- |
 | Linux Troubleshooting | [Linux High CPU](linux/high-cpu/) | Available | First-pass Linux high CPU and high load triage |
-| Linux Troubleshooting | `disk-triage.sh` | Planned | Disk full, inode, large files, deleted open files, and log growth triage |
-| Linux Troubleshooting | `memory-triage.sh` | Planned | Memory pressure, swap, OOM, RSS, and cgroup memory triage |
-| Linux Troubleshooting | `service-triage.sh` | Planned | systemd service down, failed, or restarting triage |
-| Linux Troubleshooting | `ssh-triage.sh` | Planned | Slow SSH or server access issue triage |
+| Linux Troubleshooting | [Linux Disk Full](linux/disk-full/) | Available | Disk full, inode, large files, deleted open files, and log growth triage |
+| Linux Troubleshooting | [Linux High Memory](linux/high-memory/) | Available | Memory pressure, swap, OOM, RSS, and cgroup memory triage |
+| Linux Troubleshooting | [Linux Service Down](linux/service-down/) | Available | systemd service down, failed, or restarting triage |
+| Linux Troubleshooting | [Linux Slow SSH](linux/slow-ssh/) | Available | Slow SSH or server access issue triage |
 
 ## Repository Structure
 
@@ -37,6 +37,26 @@ automyx-tools/
       highcpu-triage.sh
       OUTPUT-GUIDE.md
       VIDEO-01-linux-high-cpu.md
+    disk-full/
+      README.md
+      disk-triage.sh
+      OUTPUT-GUIDE.md
+      VIDEO-02-linux-disk-full.md
+    high-memory/
+      README.md
+      memory-triage.sh
+      OUTPUT-GUIDE.md
+      VIDEO-03-linux-high-memory.md
+    service-down/
+      README.md
+      service-triage.sh
+      OUTPUT-GUIDE.md
+      VIDEO-04-linux-service-down.md
+    slow-ssh/
+      README.md
+      ssh-triage.sh
+      OUTPUT-GUIDE.md
+      VIDEO-05-linux-slow-ssh.md
 ```
 
 Each real-time scenario has its own folder. For example, the first Linux troubleshooting scenario is:
@@ -78,6 +98,13 @@ For the Linux High CPU tool:
 - [Linux High CPU Output Guide](linux/high-cpu/OUTPUT-GUIDE.md)
 - [Linux High CPU Video Notes](linux/high-cpu/VIDEO-01-linux-high-cpu.md)
 
+Other Linux troubleshooting folders:
+
+- [Linux Disk Full](linux/disk-full/)
+- [Linux High Memory](linux/high-memory/)
+- [Linux Service Down](linux/service-down/)
+- [Linux Slow SSH](linux/slow-ssh/)
+
 ## Recommended Dependencies
 
 The tools are designed to work with standard Linux utilities when possible. Some tools may produce better reports when optional packages are installed.
@@ -111,13 +138,6 @@ Before running any script on a production system:
 These tools do not replace operational judgment. They are meant to speed up evidence collection and guide the next investigation step.
 
 ## Roadmap
-
-Planned Linux Troubleshooting tools:
-
-- Disk full triage
-- High memory triage
-- Service down or restarting triage
-- Slow SSH or server access triage
 
 Future areas:
 
