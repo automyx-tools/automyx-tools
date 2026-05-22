@@ -96,7 +96,6 @@ For the Linux High CPU tool:
 
 - [Linux High CPU Triage](linux/high-cpu/)
 - [Linux High CPU Output Guide](linux/high-cpu/OUTPUT-GUIDE.md)
-- [Linux High CPU Video Notes](linux/high-cpu/VIDEO-01-linux-high-cpu.md)
 
 Other Linux troubleshooting folders:
 
