@@ -10,7 +10,6 @@ This scenario belongs to the AutoMyx **Linux Troubleshooting** playlist.
 | --- | --- |
 | [ssh-triage.sh](ssh-triage.sh) | Read-only Linux SSH triage script |
 | [OUTPUT-GUIDE.md](OUTPUT-GUIDE.md) | Explains how to interpret the script output |
-| [VIDEO-05-linux-slow-ssh.md](VIDEO-05-linux-slow-ssh.md) | Video title, description, chapters, script, and demo notes |
 
 ## Run
 

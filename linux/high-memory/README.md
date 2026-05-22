@@ -10,7 +10,6 @@ This scenario belongs to the AutoMyx **Linux Troubleshooting** playlist.
 | --- | --- |
 | [memory-triage.sh](memory-triage.sh) | Read-only Linux memory triage script |
 | [OUTPUT-GUIDE.md](OUTPUT-GUIDE.md) | Explains how to interpret the script output |
-| [VIDEO-03-linux-high-memory.md](VIDEO-03-linux-high-memory.md) | Video title, description, chapters, script, and demo notes |
 
 ## Run
 

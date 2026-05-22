@@ -10,7 +10,6 @@ This scenario belongs to the AutoMyx **Linux Troubleshooting** playlist.
 | --- | --- |
 | [highcpu-triage.sh](highcpu-triage.sh) | Read-only Linux high CPU triage script |
 | [OUTPUT-GUIDE.md](OUTPUT-GUIDE.md) | Explains how to interpret the script output |
-| [VIDEO-01-linux-high-cpu.md](VIDEO-01-linux-high-cpu.md) | Video title, description, chapters, script, and demo notes |
 
 ## Run
 

@@ -10,7 +10,6 @@ This scenario belongs to the AutoMyx **Linux Troubleshooting** playlist.
 | --- | --- |
 | [service-triage.sh](service-triage.sh) | Read-only Linux service triage script |
 | [OUTPUT-GUIDE.md](OUTPUT-GUIDE.md) | Explains how to interpret the script output |
-| [VIDEO-04-linux-service-down.md](VIDEO-04-linux-service-down.md) | Video title, description, chapters, script, and demo notes |
 
 ## Run
 
